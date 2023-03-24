@@ -1,12 +1,26 @@
 import './sidebar.scss';
 
+import { Link } from 'react-router-dom';
+
 export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebarContainer">
-        <div className="menu">VENTE</div>
-        <div className="menu">EDITION</div>
-        <div className="menu">JOURNAL</div>
+        <div className="menu">
+          <Link to="/sales" className="link">
+            VENTE
+          </Link>
+        </div>
+        <div className="menu">
+          <Link to="/" className="link">
+            EDITION
+          </Link>
+        </div>
+        <div className="menu">
+          <Link to="/" className="link">
+            JOURNAL
+          </Link>
+        </div>
       </div>
     </div>
   );
