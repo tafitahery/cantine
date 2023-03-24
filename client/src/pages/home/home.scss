@@ -1,0 +1,15 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  .homeContainer {
+    background-color: white;
+    display: flex;
+    width: 800px;
+    height: 600px;
+    border-radius: 10px;
+  }
+}
