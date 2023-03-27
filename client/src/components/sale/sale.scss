@@ -2,4 +2,37 @@
   flex: 6;
   border-radius: 0 10px 10px 0;
   padding: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+
+    label {
+      font-size: 18px;
+      color: #555;
+      padding-bottom: 10px;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 18px;
+    }
+  }
+
+  .showCustomer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .customer {
+      font-size: 24px;
+      color: #555;
+    }
+  }
 }

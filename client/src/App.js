@@ -5,14 +5,12 @@ import Sales from './pages/sales/Sales';
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/sales" element={<Sales />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sales" element={<Sales />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

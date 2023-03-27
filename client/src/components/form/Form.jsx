@@ -9,12 +9,16 @@ export default function Form() {
           <input type="date" />
         </div>
         <div className="inputForm">
-          <label htmlFor="">Code Client:</label>
-          <input type="text" />
+          <label htmlFor="">Nom:</label>
+          <select>
+            <option value="m1"> --- </option>
+            <option value="D">Tafita</option>
+            <option value="m3">Rajo</option>
+          </select>
         </div>
         <div className="inputForm">
-          <label htmlFor="">Nom:</label>
-          <input type="text" />
+          <label htmlFor="">Code Client:</label>
+          <input type="text" disabled />
         </div>
         <div className="inputForm">
           <label htmlFor="">Menu:</label>
