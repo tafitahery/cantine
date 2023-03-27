@@ -17,6 +17,11 @@ export default function Sidebar() {
           </Link>
         </div>
         <div className="menu">
+          <Link to="/client" className="link">
+            CLIENT
+          </Link>
+        </div>
+        <div className="menu">
           <Link to="/" className="link">
             JOURNAL
           </Link>
