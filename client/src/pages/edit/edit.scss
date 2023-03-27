@@ -1,0 +1,38 @@
+.edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  .editContainer {
+    background-color: white;
+    display: flex;
+    width: 800px;
+    height: 600px;
+    border-radius: 10px;
+
+    .cellAction {
+      display: flex;
+      gap: 20px;
+
+      .editButton {
+        padding: 10px;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: lightseagreen;
+      }
+
+      .deleteButton {
+        padding: 10px;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: crimson;
+      }
+    }
+  }
+}

@@ -12,7 +12,7 @@ export default function Sidebar() {
           </Link>
         </div>
         <div className="menu">
-          <Link to="/" className="link">
+          <Link to="/edit" className="link">
             EDITION
           </Link>
         </div>
