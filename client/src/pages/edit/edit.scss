@@ -11,28 +11,5 @@
     width: 800px;
     height: 600px;
     border-radius: 10px;
-
-    .cellAction {
-      display: flex;
-      gap: 20px;
-
-      .editButton {
-        padding: 10px;
-        border: none;
-        color: white;
-        border-radius: 5px;
-        cursor: pointer;
-        background-color: lightseagreen;
-      }
-
-      .deleteButton {
-        padding: 10px;
-        border: none;
-        color: white;
-        border-radius: 5px;
-        cursor: pointer;
-        background-color: crimson;
-      }
-    }
   }
 }

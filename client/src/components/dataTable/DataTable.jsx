@@ -46,6 +46,7 @@ export default function DataTable() {
         pageSize={5}
         rowsPerPageOptions={[5]}
       />
+      <button>Exporter</button>
     </div>
   );
 }
