@@ -2,6 +2,7 @@ import './client.scss';
 
 import { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 import Sidebar from '../../components/sidebar/Sidebar';
 
@@ -11,6 +12,7 @@ export default function Sales() {
     code: '',
   });
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setClient((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -41,6 +43,7 @@ export default function Sales() {
               type="text"
               value={client.name}
               onChange={(e) => handleChange(e)}
+              required
             />
           </div>
           <div className="clientInput">
@@ -50,16 +53,20 @@ export default function Sales() {
               type="text"
               value={client.code}
               onChange={(e) => handleChange(e)}
+              required
             />
           </div>
           <button>Valider</button>
           {error !== null ? (
             error ? (
-              <span>Erreur d'enregistrement</span>
+              <span className="message error">Erreur d'enregistrement</span>
             ) : (
-              <span>Enregistré avec succès</span>
+              <span className="message success">Enregistré avec succès</span>
             )
           ) : null}
+          <div className="clientShowAll" onClick={() => navigate('/edit')}>
+            Afficher clients
+          </div>
         </form>
       </div>
     </div>
