@@ -39,16 +39,36 @@
         }
       }
 
-      button {
-        padding: 10px;
-        font-size: 18px;
-        border: none;
-        width: 150px;
-        background-color: teal;
-        color: white;
-        border-radius: 5px;
-        align-self: center;
-        cursor: pointer;
+      .validation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        button {
+          padding: 10px;
+          font-size: 18px;
+          border: none;
+          width: 150px;
+          background-color: teal;
+          color: white;
+          border-radius: 5px;
+          align-self: center;
+          cursor: pointer;
+        }
+
+        .message {
+          align-self: center;
+          margin-top: 20px;
+          font-size: 14px;
+
+          &.error {
+            color: red;
+          }
+
+          &.success {
+            color: green;
+          }
+        }
       }
     }
   }
