@@ -6,26 +6,18 @@ export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebarContainer">
-        <div className="menu">
-          <Link to="/sales" className="link">
-            VENTE
-          </Link>
-        </div>
-        <div className="menu">
-          <Link to="/edit" className="link">
-            EDITION
-          </Link>
-        </div>
-        <div className="menu">
-          <Link to="/client" className="link">
-            CLIENT
-          </Link>
-        </div>
-        <div className="menu">
-          <Link to="/" className="link">
-            JOURNAL
-          </Link>
-        </div>
+        <Link to="/sales" className="link">
+          <div className="menu">VENTE</div>
+        </Link>
+        <Link to="/edit" className="link">
+          <div className="menu">EDITION</div>
+        </Link>
+        <Link to="/client" className="link">
+          <div className="menu">CLIENT</div>
+        </Link>
+        <Link to="/" className="link">
+          <div className="menu">JOURNAL</div>
+        </Link>
       </div>
     </div>
   );

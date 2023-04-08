@@ -11,21 +11,21 @@
     height: 100%;
     gap: 30px;
 
-    .menu {
-      font-size: 24px;
-      padding: 10px 20px;
-      cursor: pointer;
-      transition: all 0.5s ease;
+    .link {
+      text-decoration: none;
+      color: inherit;
 
-      &:hover {
-        font-weight: 600;
-        background-color: white;
-        color: black;
-      }
+      .menu {
+        font-size: 24px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: all 0.5s ease;
 
-      .link {
-        text-decoration: none;
-        color: inherit;
+        &:hover {
+          font-weight: 600;
+          background-color: white;
+          color: black;
+        }
       }
     }
   }
