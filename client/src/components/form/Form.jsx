@@ -1,6 +1,23 @@
 import './form.scss';
 
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+
 export default function Form() {
+  const [clients, setClients] = useState([]);
+
+  useEffect(() => {
+    const fethClients = async () => {
+      try {
+        const { data } = await axios.get('http://localhost:5000/clients');
+        setClients(data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fethClients();
+  }, []);
+
   return (
     <div className="form">
       <form>
@@ -11,9 +28,12 @@ export default function Form() {
         <div className="inputForm">
           <label htmlFor="">Nom:</label>
           <select>
-            <option value="m1"> --- </option>
-            <option value="D">Tafita</option>
-            <option value="m3">Rajo</option>
+            <option value=""> --- </option>
+            {clients.map((client) => (
+              <option key={client.code} value={client.code}>
+                {client.name}
+              </option>
+            ))}
           </select>
         </div>
         <div className="inputForm">
